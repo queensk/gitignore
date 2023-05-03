@@ -1,23 +1,4 @@
-Guess the word!
-I'm thinking of a word. Can you guess what it is? Here's a clue: it's a programming language.
-
-To make a guess, simply type your answer in the box below and click the "Guess" button.
-
-<input type="text" id="guess-box">
-<button onclick="checkGuess()">Guess</button>
-<span id="result"></span>
-
-<script>
-  function checkGuess() {
-    const answer = "Python";
-    const guess = document.getElementById("guess-box").value;
-    if (guess.toLowerCase() === answer.toLowerCase()) {
-      document.getElementById("result").innerHTML = "Congratulations! You guessed the word!";
-    } else {
-      document.getElementById("result").innerHTML = "Sorry, that's not the word I'm thinking of. Try again!";
-    }
-  }
-</script>
+# `.gitignore` cheatsheet
 
 | Pattern         | Explanation                                          | Example                |
 | --------------- | ---------------------------------------------------- | ---------------------- |
@@ -121,31 +102,3 @@ The correct answer is Ignore a directory and its subdirectories. This pattern te
 </details>
 
 Congratulations, you've completed the Gitignore Pattern Matching Game! I hope this helped you learn the `.gitignore` cheatsheet better.
-
-
-Which of the following explanations is correct?
-
-<div id="answer-5">
-    <label>
-        <input type="radio" name="answer-5" value="option-1"> Ignore files with a specific extension
-    </label>
-    <label>
-        <input type="radio" name="answer-5" value="option-2"> Ignore a directory and its subdirectories
-    </label>
-    <label>
-        <input type="radio" name="answer-5" value="option-3"> Ignore a specific file
-    </label>
-    <label>
-        <input type="radio" name="answer-5" value="option-4"> Do not ignore a specific file
-    </label>
-</div>
-
-<script>
-document.getElementById('answer-5').addEventListener('change', function(event) {
-    if (event.target.value === 'option-2') {
-        alert('Correct! The pattern **/__pycache__/ ignores the __pycache__ directory and its subdirectories.');
-    } else {
-        alert('Sorry, that\'s incorrect. The correct answer is "Ignore a directory and its subdirectories."');
-    }
-});
-</script>
