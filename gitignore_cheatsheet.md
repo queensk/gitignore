@@ -1,29 +1,27 @@
 # `.gitignore` cheatsheet
 
-| Pattern         | Explanation                                          | Example                |
-| --------------- | ---------------------------------------------------- | ---------------------- |
-| `/dir/`         | Ignore a directory                                   | `/node_modules/`       |
-| `*.ext`         | Ignore files with a specific extension               | `*.log`                |
-| `file`          | Ignore a specific file                                | `credentials.txt`      |
-| `!file`         | Do not ignore a specific file                         | `!config.json`         |
-| `#`             | Add a comment                                         | `# Ignore generated files` |
-| `/dir/*`        | Ignore all files in a directory                      | `/build/*`             |
-| `dir/*`         | Ignore all files in a directory, except for a file   | `docs/* !docs/index.md` |
-| `**/pattern/`   | Ignore a directory and its subdirectories             | `**/__pycache__/`      |
-| `*/pattern/`    | Ignore a directory and its immediate subdirectories   | `*/__pycache__/`       |
-| `pattern/**/other` | Ignore a specific file in a directory and its subdirectories | `build/**/*.log` |
-
+| Pattern            | Explanation                                                  | Example                    |
+| ------------------ | ------------------------------------------------------------ | -------------------------- |
+| `/dir/`            | Ignore a directory                                           | `/node_modules/`           |
+| `*.ext`            | Ignore files with a specific extension                       | `*.log`                    |
+| `file`             | Ignore a specific file                                       | `credentials.txt`          |
+| `!file`            | Do not ignore a specific file                                | `!config.json`             |
+| `#`                | Add a comment                                                | `# Ignore generated files` |
+| `/dir/*`           | Ignore all files in a directory                              | `/build/*`                 |
+| `dir/*`            | Ignore all files in a directory, except for a file           | `docs/* !docs/index.md`    |
+| `**/pattern/`      | Ignore a directory and its subdirectories                    | `**/__pycache__/`          |
+| `*/pattern/`       | Ignore a directory and its immediate subdirectories          | `*/__pycache__/`           |
+| `pattern/**/other` | Ignore a specific file in a directory and its subdirectories | `build/**/*.log`           |
 
 ## Gitignore Pattern Matching Game
 
 In this game, you will be shown a pattern from the `.gitignore` cheatsheet, and you must select the correct explanation from the options provided. Let's get started!
 
-### Round 1
+### `Round 1`
 
 Here's your first pattern:
 
-#### /dir/
-
+\/dir/
 
 Which of the following explanations is correct?
 
@@ -39,7 +37,7 @@ The correct answer is Ignore a directory. This pattern tells Git to ignore the e
 
 Here's your next pattern:
 
-*.log
+\*.log
 
 Which of the following explanations is correct?
 
@@ -51,12 +49,11 @@ Which of the following explanations is correct?
 The correct answer is Ignore files with a specific extension. This pattern tells Git to ignore any file that ends with .log, such as error.log or debug.log.
 </details>
 
-### Round 3
+### `Round 3`
 
 Here's your next pattern:
 
 !config.json
-
 
 Which of the following explanations is correct?
 
@@ -68,12 +65,11 @@ Which of the following explanations is correct?
 The correct answer is Do not ignore a specific file. This pattern tells Git to include config.json in the repository, even if it matches another ignore pattern. The ! symbol negates the ignore rule.
 </details>
 
-### Round 4
+### `Round 4`
 
 Here's your next pattern:
 
-/docs/* !docs/index.md
-
+/docs/\* !docs/index.md
 
 Which of the following explanations is correct?
 
@@ -85,11 +81,11 @@ Which of the following explanations is correct?
 The correct answer is Ignore all files in a directory, except for a specific file. This pattern tells Git to ignore all files in the docs directory, except for index.md. The ! symbol negates the ignore rule for that file.
 </details>
 
-### Round 5
+### `Round 5`
 
 Here's your final pattern:
 
-**/pycache/
+\*\*/pycache/
 
 Which of the following explanations is correct?
 
