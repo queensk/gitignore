@@ -14,4 +14,4 @@ Note that the contents of this file are just a starting point, and you may need 
 If you have suggestions for additional files and directories to ignore, feel free to open a pull request. Contributions are welcome!
 
 ## License
-This repository is licensed under the MIT License. See the `LICENSE` file for details.
+This repository is licensed under the MIT License. See the [`LICENSE`](./LICENSE) file for details.
